@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html"  %}
+<!--<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>-->
+  {% block body_block %}
+    <h1>Welcome to Relative Page</h1>
+    <a href="{% url 'LearnApp:first' %}">first_page</a>
+    <a href="{% url 'admin:index' %}">django database index</a>
+    <a href="{% url 'index' %}">main index</a>
+  {% endblock %}
+<!--  </body>
+</html>-->

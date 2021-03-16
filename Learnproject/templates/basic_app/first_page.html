@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+
+<!--<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First_Page</title>
+  </head>
+  <body>-->
+  {% block body_block %}
+    <h1>Hello First Page</h1>
+    <a href="{% url 'LearnApp:relative' %}">Relative PAge</a>
+  {% endblock %}
+<!--  </body>
+</html>
+-->

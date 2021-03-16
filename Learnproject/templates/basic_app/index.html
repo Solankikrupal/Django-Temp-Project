@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load static %}
+{% load my_extras %}
+
+
+<!--<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>-->
+  {% block body_block %}
+    <h1>Welcome to Index Page</h1>
+    <h1>{{ intro }}</h1>
+    <h1>{{ data }}</h1>
+    <h1>Sum of uper number : {{ data|AddOn }}</h1>
+    <a href="{% url 'LearnApp:first' %}">First_Page</a>
+  {% endblock %}
+<!--  </body>
+</html>-->
